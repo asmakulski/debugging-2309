@@ -37,7 +37,7 @@ public class ListServlet extends HttpServlet {
                 JSONObject obj = (JSONObject) aJsonArray;
                 String ageString = (obj).get("age").toString();
                 int age = Integer.valueOf(ageString);
-                if (age > 7) {
+                if (age > 8) {
                     String userText = obj.get("name") + " " + obj.get("surname") + ", age: " + obj.get("age");
                     stringBuilder.append("<div>").append(userText).append("</div>");
                 }
