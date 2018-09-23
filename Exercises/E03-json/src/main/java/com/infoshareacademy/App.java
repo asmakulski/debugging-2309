@@ -1,6 +1,5 @@
 package com.infoshareacademy;
 
-import jdk.nashorn.internal.parser.JSONParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -32,7 +31,7 @@ public class App {
 
             // Find users having e-mails in domain .pl
             emails.forEach(mail -> {
-                if (mail.contains("pl")) {
+                if (mail.contains(".pl")) {
                     System.out.println(mail);
                 }
             });
